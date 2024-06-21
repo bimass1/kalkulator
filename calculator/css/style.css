@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  border: none;
+}
+body {
+  background-color: #232949;
+}
+.container {
+  background: #232949;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  max-width: 400px;
+  border-radius: 20px;
+  transition: all ease-in-out 0.5s;
+  animation: border_animasi 2s linear infinite;
+}
+.container .elemen {
+  display: flex;
+  justify-content: center;
+}
+.container .elemen .kotak_field {
+  margin-top: 20px;
+  animation: border_animasi 2s linear infinite;
+  padding-left: 20px;
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  padding-right: 20px;
+  padding-top: 2px;
+  outline: none;
+  width: 300px;
+  height: 40px;
+  padding-bottom: 2px;
+  border-radius: 20px;
+}
+.content {
+  padding: 20px;
+  display: grid;
+  gap: 10px;
+  color: white;
+  text-align: center;
+  grid-template-columns: repeat(3, 1fr);
+}
+.content .tomboll {
+  padding: 10px;
+  border-radius: 10px;
+  background: black;
+  cursor: pointer;
+  transition: all ease-in-out 0.3s;
+}
+.content .tomboll:hover {
+  background: #373434;
+}
+
+@keyframes border_animasi {
+  0% {
+    border: 3px solid purple;
+  }
+  50% {
+    border: 3px solid green;
+  }
+  80% {
+    border: 3px solid rgb(39, 90, 244);
+  }
+  100% {
+    border: 3px solid purple;
+  }
+}
